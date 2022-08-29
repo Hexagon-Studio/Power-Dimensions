@@ -1,5 +1,5 @@
 {
-  "homepage": "https://www.curseforge.com/minecraft/mc-mods/power-dimensions",
+  "homepage": "https://github.com/Hexagon-Studio/Power-Dimensions",
   "promos": {
     "1.18.2-latest": "1.0.0",
     "1.18.2-recommended": "1.0.0"
@@ -7,6 +7,6 @@
   "1.18.2": {
 "1.0.0": "
 -  Move dimensions The Crystallized World, Oblivion and the Solar Kingdom into a separate mod
-You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/power-dimensions"
+You can download the mod by following the link: https://github.com/Hexagon-Studio/Power-Dimensions"
   }
 }
