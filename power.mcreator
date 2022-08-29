@@ -26,7 +26,7 @@
       "type": "recipe",
       "sortid": 797,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallized_craft",
       "path": "~/Dimensions"
     },
@@ -56,7 +56,7 @@
       "type": "recipe",
       "sortid": 800,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "oblivion_craft",
       "path": "~/Dimensions"
     },
@@ -212,7 +212,7 @@
       "type": "recipe",
       "sortid": 930,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "sunny_kingdom_craft",
       "path": "~/Dimensions"
     },
