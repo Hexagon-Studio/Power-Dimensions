@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "R",
+    "keyBindingName": "Special Ability Key",
+    "keyBindingCategoryKey": "stones",
+    "onKeyPressed": {
+      "name": "SpecialAbilityUse"
+    }
+  }
+}

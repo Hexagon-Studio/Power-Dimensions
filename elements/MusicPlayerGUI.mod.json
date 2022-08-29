@@ -1,0 +1,77 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 300,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Music Player",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Music Player",
+          "x": 186,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Stop",
+          "onClick": {
+            "name": "StopSound"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Stop",
+          "x": 303,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Build-In",
+          "onClick": {
+            "name": "OpenBuitinMusic"
+          },
+          "width": 67,
+          "height": 20,
+          "name": "Build-In",
+          "x": 114,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Custom",
+          "onClick": {
+            "name": "OpenCastomMusic"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Custom",
+          "x": 240,
+          "y": 98
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
