@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "power:energium_ore",
-    "power:energium_block",
     "power:crystal_blue",
     "power:crystal_brown",
     "power:crystal_gray",
@@ -14,10 +12,6 @@
     "power:crystal_purple",
     "power:crystal_red",
     "power:crystal_violet",
-    "power:crystal_yellow",
-    "power:moon_stones_block",
-    "power:unmultiplication_moon_stones_block",
-    "power:technobarrier_block",
-    "power:amber_block"
+    "power:crystal_yellow"
   ]
 }
