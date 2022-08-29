@@ -31,11 +31,11 @@ public class SunPlainsBiome {
 				.foliageColorOverride(-10027060).grassColorOverride(-10027060).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:grass_sun_plains", VegetationFeatures.PATCH_GRASS,
+				PlacementUtils.register("power_dimensions:grass_sun_plains", VegetationFeatures.PATCH_GRASS,
 						List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 8), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
 								BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:flower_sun_plains", VegetationFeatures.FLOWER_DEFAULT, List.of(CountPlacement.of(6),
+				PlacementUtils.register("power_dimensions:flower_sun_plains", VegetationFeatures.FLOWER_DEFAULT, List.of(CountPlacement.of(6),
 						RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);

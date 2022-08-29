@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "power_dimensions:items/oblivion_flint_and_steel"
+  }
+}

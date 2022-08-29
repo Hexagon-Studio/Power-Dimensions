@@ -23,11 +23,11 @@ public class CrystallizedLandsBiome {
 				.skyColor(-16711783).foliageColorOverride(-16724839).grassColorOverride(-16724839).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:grass_crystallized_lands", VegetationFeatures.PATCH_GRASS,
+				PlacementUtils.register("power_dimensions:grass_crystallized_lands", VegetationFeatures.PATCH_GRASS,
 						List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
 								BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:flower_crystallized_lands", VegetationFeatures.FLOWER_DEFAULT, List.of(CountPlacement.of(3),
+				PlacementUtils.register("power_dimensions:flower_crystallized_lands", VegetationFeatures.FLOWER_DEFAULT, List.of(CountPlacement.of(3),
 						RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCrystalFormations(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);

@@ -1,17 +1,17 @@
 {
   "replace": false,
   "values": [
-    "power:crystal_blue",
-    "power:crystal_brown",
-    "power:crystal_gray",
-    "power:crystal_green",
-    "power:crystal_light_blue",
-    "power:crystal_lime",
-    "power:crystal_orange",
-    "power:crystal_pink",
-    "power:crystal_purple",
-    "power:crystal_red",
-    "power:crystal_violet",
-    "power:crystal_yellow"
+    "power_dimensions:crystal_blue",
+    "power_dimensions:crystal_brown",
+    "power_dimensions:crystal_gray",
+    "power_dimensions:crystal_green",
+    "power_dimensions:crystal_light_blue",
+    "power_dimensions:crystal_lime",
+    "power_dimensions:crystal_orange",
+    "power_dimensions:crystal_pink",
+    "power_dimensions:crystal_purple",
+    "power_dimensions:crystal_red",
+    "power_dimensions:crystal_violet",
+    "power_dimensions:crystal_yellow"
   ]
 }

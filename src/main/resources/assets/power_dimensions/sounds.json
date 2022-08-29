@@ -1,0 +1,177 @@
+{
+  "stone_deactivation": {
+    "category": "player",
+    "subtitle": "subtitles.stone_deactivation",
+    "sounds": [
+      {
+        "name": "power_dimensions:stone_deactivation",
+        "stream": false
+      }
+    ]
+  },
+  "powerful_stone": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "power_dimensions:7ef0c7b9f11f69a",
+        "stream": true
+      }
+    ]
+  },
+  "tyrannosaurus_rex.hurt": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "power_dimensions:tyrannosaurus_rex.hurt",
+        "stream": false
+      }
+    ]
+  },
+  "tyrannosaurus_rex.dead": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "power_dimensions:tyrannosaurus_rex.dead",
+        "stream": false
+      }
+    ]
+  },
+  "raptor.dead": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "power_dimensions:raptor.dead",
+        "stream": false
+      }
+    ]
+  },
+  "raptor.hurt": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "power_dimensions:raptor.hurt",
+        "stream": false
+      }
+    ]
+  },
+  "time_power": {
+    "category": "player",
+    "subtitle": "subtitles.time_power",
+    "sounds": [
+      {
+        "name": "power_dimensions:time_travel",
+        "stream": false
+      }
+    ]
+  },
+  "music1": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "power_dimensions:music1",
+        "stream": true
+      }
+    ]
+  },
+  "music2": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "power_dimensions:music2",
+        "stream": true
+      }
+    ]
+  },
+  "music3": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "power_dimensions:music3",
+        "stream": true
+      }
+    ]
+  },
+  "music4": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "power_dimensions:music4",
+        "stream": true
+      }
+    ]
+  },
+  "music5": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "power_dimensions:music5",
+        "stream": true
+      }
+    ]
+  },
+  "music6": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "power_dimensions:music6",
+        "stream": true
+      }
+    ]
+  },
+  "music7": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "power_dimensions:music7",
+        "stream": true
+      }
+    ]
+  },
+  "music8": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "power_dimensions:music8",
+        "stream": true
+      }
+    ]
+  },
+  "music9": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "power_dimensions:music9",
+        "stream": true
+      }
+    ]
+  },
+  "music10": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "power_dimensions:music10",
+        "stream": true
+      }
+    ]
+  },
+  "stone_activation": {
+    "category": "player",
+    "subtitle": "subtitles.stone_activation",
+    "sounds": [
+      {
+        "name": "power_dimensions:stone_activation",
+        "stream": false
+      }
+    ]
+  },
+  "rocket.fly": {
+    "category": "neutral",
+    "subtitle": "subtitles.rocket.fly",
+    "sounds": [
+      {
+        "name": "power_dimensions:rocket.fly",
+        "stream": false
+      }
+    ]
+  }
+}

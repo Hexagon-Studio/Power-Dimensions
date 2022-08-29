@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "power:crystallized_lands",
-    "power:crystallized_forest"
+    "power_dimensions:crystallized_lands",
+    "power_dimensions:crystallized_forest"
   ]
 }

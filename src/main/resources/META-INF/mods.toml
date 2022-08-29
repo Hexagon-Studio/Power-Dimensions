@@ -3,18 +3,19 @@ loaderVersion="[40,)"
 license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
-modId="power"
+modId="power_dimensions"
 version="1.0.0"
 displayName="Power Dimensions"
 credits="Created by MagicalAlexey, with the support of Chiffon Medal, FixEnd, 7ZLBeka, Superlexaan as well as many other contributors."
 displayURL="https://www.curseforge.com/minecraft/mc-mods/power-dimensions"
+updateJSONURL="https://raw.githubusercontent.com/Hexagon-Studio/Power-Dimensions/main/changelog.json"
 logoFile="logo.png"
 authors="Hexagon Studio"
 description='''
 About Power Dimensions is an add-on mod for the Keepers of the Stones mod
 '''
 
-[[dependencies.power]]
+[[dependencies.power_dimensions]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.18.2]"
@@ -23,10 +24,4 @@ About Power Dimensions is an add-on mod for the Keepers of the Stones mod
 
 
 
-[[dependencies.power]]
-    modId="power"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 

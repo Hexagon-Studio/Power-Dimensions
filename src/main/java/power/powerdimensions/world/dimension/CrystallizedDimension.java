@@ -54,7 +54,7 @@ public class CrystallizedDimension {
 					return true;
 				}
 			};
-			event.enqueueWork(() -> DimensionSpecialEffects.EFFECTS.put(new ResourceLocation("power:crystallized"), customEffect));
+			event.enqueueWork(() -> DimensionSpecialEffects.EFFECTS.put(new ResourceLocation("power_dimensions:crystallized"), customEffect));
 		}
 	}
 }

@@ -52,7 +52,7 @@ public class SunnyKingdomDimension {
 					return false;
 				}
 			};
-			event.enqueueWork(() -> DimensionSpecialEffects.EFFECTS.put(new ResourceLocation("power:sunny_kingdom"), customEffect));
+			event.enqueueWork(() -> DimensionSpecialEffects.EFFECTS.put(new ResourceLocation("power_dimensions:sunny_kingdom"), customEffect));
 		}
 	}
 }

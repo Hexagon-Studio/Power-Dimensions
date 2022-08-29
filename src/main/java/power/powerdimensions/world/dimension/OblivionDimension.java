@@ -56,7 +56,7 @@ public class OblivionDimension {
 					return true;
 				}
 			};
-			event.enqueueWork(() -> DimensionSpecialEffects.EFFECTS.put(new ResourceLocation("power:oblivion"), customEffect));
+			event.enqueueWork(() -> DimensionSpecialEffects.EFFECTS.put(new ResourceLocation("power_dimensions:oblivion"), customEffect));
 		}
 	}
 }

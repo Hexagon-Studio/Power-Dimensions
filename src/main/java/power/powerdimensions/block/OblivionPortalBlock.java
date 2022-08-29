@@ -90,9 +90,10 @@ public class OblivionPortalBlock extends NetherPortalBlock {
 		if (!entity.isPassenger() && !entity.isVehicle() && entity.canChangeDimensions() && !entity.level.isClientSide() && true) {
 			if (entity.isOnPortalCooldown()) {
 				entity.setPortalCooldown();
-			} else if (entity.level.dimension() != ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:oblivion"))) {
+			} else if (entity.level.dimension() != ResourceKey.create(Registry.DIMENSION_REGISTRY,
+					new ResourceLocation("power_dimensions:oblivion"))) {
 				entity.setPortalCooldown();
-				teleportToDimension(entity, pos, ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:oblivion")));
+				teleportToDimension(entity, pos, ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power_dimensions:oblivion")));
 			} else {
 				entity.setPortalCooldown();
 				teleportToDimension(entity, pos, Level.OVERWORLD);

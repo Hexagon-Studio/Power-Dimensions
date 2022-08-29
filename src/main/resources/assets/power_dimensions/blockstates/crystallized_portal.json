@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "power_dimensions:block/crystallized_portal_ew"
+    },
+    "axis=x": {
+      "model": "power_dimensions:block/crystallized_portal_ns"
+    }
+  }
+}

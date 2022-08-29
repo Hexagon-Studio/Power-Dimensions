@@ -1,7 +1,7 @@
 
 package power.powerdimensions.world.features.ores;
 
-import power.powerdimensions.init.PowerModBlocks;
+import power.powerdimensions.init.PowerDimensionsModBlocks;
 
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -43,10 +43,11 @@ public class CrystalBlueFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new CrystalBlueFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("power:crystal_blue", FEATURE,
-				new OreConfiguration(CrystalBlueFeatureRuleTest.INSTANCE, PowerModBlocks.CRYSTAL_BLUE.get().defaultBlockState(), 16));
-		PLACED_FEATURE = PlacementUtils.register("power:crystal_blue", CONFIGURED_FEATURE, List.of(CountPlacement.of(10), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(256)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("power_dimensions:crystal_blue", FEATURE,
+				new OreConfiguration(CrystalBlueFeatureRuleTest.INSTANCE, PowerDimensionsModBlocks.CRYSTAL_BLUE.get().defaultBlockState(), 16));
+		PLACED_FEATURE = PlacementUtils.register("power_dimensions:crystal_blue", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(10), InSquarePlacement.spread(),
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(256)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
@@ -56,7 +57,7 @@ public class CrystalBlueFeature extends OreFeature {
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 	private final Set<ResourceKey<Level>> generate_dimensions = Set
-			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:crystallized")));
+			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power_dimensions:crystallized")));
 
 	public CrystalBlueFeature() {
 		super(OreConfiguration.CODEC);
@@ -77,14 +78,14 @@ public class CrystalBlueFeature extends OreFeature {
 
 		@SubscribeEvent
 		public static void init(FMLCommonSetupEvent event) {
-			Registry.register(Registry.RULE_TEST, new ResourceLocation("power:crystal_blue_match"), CUSTOM_MATCH);
+			Registry.register(Registry.RULE_TEST, new ResourceLocation("power_dimensions:crystal_blue_match"), CUSTOM_MATCH);
 		}
 
 		private List<Block> base_blocks = null;
 
 		public boolean test(BlockState blockAt, Random random) {
 			if (base_blocks == null) {
-				base_blocks = List.of(Blocks.STONE, PowerModBlocks.CRYSTAL_BLUE.get());
+				base_blocks = List.of(Blocks.STONE, PowerDimensionsModBlocks.CRYSTAL_BLUE.get());
 			}
 			return base_blocks.contains(blockAt.getBlock());
 		}

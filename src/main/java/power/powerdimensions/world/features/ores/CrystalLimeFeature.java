@@ -1,7 +1,7 @@
 
 package power.powerdimensions.world.features.ores;
 
-import power.powerdimensions.init.PowerModBlocks;
+import power.powerdimensions.init.PowerDimensionsModBlocks;
 
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -43,10 +43,11 @@ public class CrystalLimeFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new CrystalLimeFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("power:crystal_lime", FEATURE,
-				new OreConfiguration(CrystalLimeFeatureRuleTest.INSTANCE, PowerModBlocks.CRYSTAL_LIME.get().defaultBlockState(), 16));
-		PLACED_FEATURE = PlacementUtils.register("power:crystal_lime", CONFIGURED_FEATURE, List.of(CountPlacement.of(10), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(256)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("power_dimensions:crystal_lime", FEATURE,
+				new OreConfiguration(CrystalLimeFeatureRuleTest.INSTANCE, PowerDimensionsModBlocks.CRYSTAL_LIME.get().defaultBlockState(), 16));
+		PLACED_FEATURE = PlacementUtils.register("power_dimensions:crystal_lime", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(10), InSquarePlacement.spread(),
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(256)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
@@ -56,7 +57,7 @@ public class CrystalLimeFeature extends OreFeature {
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 	private final Set<ResourceKey<Level>> generate_dimensions = Set
-			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:crystallized")));
+			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power_dimensions:crystallized")));
 
 	public CrystalLimeFeature() {
 		super(OreConfiguration.CODEC);
@@ -77,7 +78,7 @@ public class CrystalLimeFeature extends OreFeature {
 
 		@SubscribeEvent
 		public static void init(FMLCommonSetupEvent event) {
-			Registry.register(Registry.RULE_TEST, new ResourceLocation("power:crystal_lime_match"), CUSTOM_MATCH);
+			Registry.register(Registry.RULE_TEST, new ResourceLocation("power_dimensions:crystal_lime_match"), CUSTOM_MATCH);
 		}
 
 		private List<Block> base_blocks = null;

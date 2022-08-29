@@ -90,9 +90,11 @@ public class CrystallizedPortalBlock extends NetherPortalBlock {
 		if (!entity.isPassenger() && !entity.isVehicle() && entity.canChangeDimensions() && !entity.level.isClientSide() && true) {
 			if (entity.isOnPortalCooldown()) {
 				entity.setPortalCooldown();
-			} else if (entity.level.dimension() != ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:crystallized"))) {
+			} else if (entity.level.dimension() != ResourceKey.create(Registry.DIMENSION_REGISTRY,
+					new ResourceLocation("power_dimensions:crystallized"))) {
 				entity.setPortalCooldown();
-				teleportToDimension(entity, pos, ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:crystallized")));
+				teleportToDimension(entity, pos,
+						ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power_dimensions:crystallized")));
 			} else {
 				entity.setPortalCooldown();
 				teleportToDimension(entity, pos, Level.OVERWORLD);

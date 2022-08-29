@@ -1,7 +1,7 @@
 
 package power.powerdimensions.world.teleporter;
 
-import power.powerdimensions.init.PowerModBlocks;
+import power.powerdimensions.init.PowerDimensionsModBlocks;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
@@ -46,8 +46,8 @@ public class SunnyKingdomTeleporter implements ITeleporter {
 	@SubscribeEvent
 	public static void registerPointOfInterest(RegistryEvent.Register<PoiType> event) {
 		poi = new PoiType("sunny_kingdom_portal",
-				com.google.common.collect.Sets
-						.newHashSet(ImmutableSet.copyOf(PowerModBlocks.SUNNY_KINGDOM_PORTAL.get().getStateDefinition().getPossibleStates())),
+				com.google.common.collect.Sets.newHashSet(
+						ImmutableSet.copyOf(PowerDimensionsModBlocks.SUNNY_KINGDOM_PORTAL.get().getStateDefinition().getPossibleStates())),
 				0, 1).setRegistryName("sunny_kingdom_portal");
 		ForgeRegistries.POI_TYPES.register(poi);
 	}
@@ -165,7 +165,7 @@ public class SunnyKingdomTeleporter implements ITeleporter {
 				}
 			}
 		}
-		BlockState blockstate = PowerModBlocks.SUNNY_KINGDOM_PORTAL.get().defaultBlockState().setValue(NetherPortalBlock.AXIS, p_77668_);
+		BlockState blockstate = PowerDimensionsModBlocks.SUNNY_KINGDOM_PORTAL.get().defaultBlockState().setValue(NetherPortalBlock.AXIS, p_77668_);
 		for (int k2 = 0; k2 < 2; ++k2) {
 			for (int l2 = 0; l2 < 3; ++l2) {
 				blockpos$mutableblockpos.setWithOffset(blockpos, k2 * direction.getStepX(), l2, k2 * direction.getStepZ());

@@ -4,7 +4,7 @@ package power.powerdimensions.world.biome;
 import power.powerdimensions.world.features.treedecorators.CrystallizedForestTrunkDecorator;
 import power.powerdimensions.world.features.treedecorators.CrystallizedForestLeaveDecorator;
 import power.powerdimensions.world.features.treedecorators.CrystallizedForestFruitDecorator;
-import power.powerdimensions.init.PowerModBlocks;
+import power.powerdimensions.init.PowerDimensionsModBlocks;
 
 import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
 import net.minecraft.world.level.levelgen.placement.RarityFilter;
@@ -40,31 +40,35 @@ public class CrystallizedForestBiome {
 				.skyColor(-16711783).foliageColorOverride(-16724839).grassColorOverride(-16724839).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:tree_crystallized_forest", FeatureUtils.register("power:tree_crystallized_forest", Feature.TREE,
-						new TreeConfiguration.TreeConfigurationBuilder(
-								BlockStateProvider.simple(PowerModBlocks.CRYSTAL_BROWN.get().defaultBlockState()), new StraightTrunkPlacer(5, 2, 0),
-								BlockStateProvider.simple(PowerModBlocks.CRYSTAL_GREEN.get().defaultBlockState()),
-								new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
-								.decorators(ImmutableList.of(CrystallizedForestLeaveDecorator.INSTANCE, CrystallizedForestTrunkDecorator.INSTANCE,
-										CrystallizedForestFruitDecorator.INSTANCE))
-								.build()),
+				PlacementUtils.register("power_dimensions:tree_crystallized_forest",
+						FeatureUtils.register("power_dimensions:tree_crystallized_forest", Feature.TREE,
+								new TreeConfiguration.TreeConfigurationBuilder(
+										BlockStateProvider.simple(PowerDimensionsModBlocks.CRYSTAL_BROWN.get().defaultBlockState()),
+										new StraightTrunkPlacer(5, 2, 0),
+										BlockStateProvider.simple(PowerDimensionsModBlocks.CRYSTAL_GREEN.get().defaultBlockState()),
+										new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
+										.decorators(ImmutableList.of(CrystallizedForestLeaveDecorator.INSTANCE,
+												CrystallizedForestTrunkDecorator.INSTANCE, CrystallizedForestFruitDecorator.INSTANCE))
+										.build()),
 						List.of(CountPlacement.of(4), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0),
 								PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING),
 								BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:grass_crystallized_forest", VegetationFeatures.PATCH_GRASS,
+				PlacementUtils.register("power_dimensions:grass_crystallized_forest", VegetationFeatures.PATCH_GRASS,
 						List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
 								BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:flower_crystallized_forest", VegetationFeatures.FLOWER_DEFAULT, List.of(CountPlacement.of(3),
-						RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:brown_mushroom_crystallized_forest", VegetationFeatures.PATCH_BROWN_MUSHROOM,
+				PlacementUtils.register("power_dimensions:flower_crystallized_forest", VegetationFeatures.FLOWER_DEFAULT,
 						List.of(CountPlacement.of(3), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
 								BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:red_mushroom_crystallized_forest", VegetationFeatures.PATCH_RED_MUSHROOM, List.of(CountPlacement.of(3),
-						RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
+				PlacementUtils.register("power_dimensions:brown_mushroom_crystallized_forest", VegetationFeatures.PATCH_BROWN_MUSHROOM,
+						List.of(CountPlacement.of(3), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
+								BiomeFilter.biome())));
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				PlacementUtils.register("power_dimensions:red_mushroom_crystallized_forest", VegetationFeatures.PATCH_RED_MUSHROOM,
+						List.of(CountPlacement.of(3), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
+								BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCrystalFormations(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);

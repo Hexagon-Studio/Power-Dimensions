@@ -33,8 +33,9 @@ public class OblivionForestBiome {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-16764109).waterColor(-16764109).waterFogColor(-16764109)
 				.skyColor(-16764109).foliageColorOverride(-16777216).grassColorOverride(-16777216).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("power:tree_oblivion_forest",
-				FeatureUtils.register("power:tree_oblivion_forest", Feature.TREE,
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register(
+				"power_dimensions:tree_oblivion_forest",
+				FeatureUtils.register("power_dimensions:tree_oblivion_forest", Feature.TREE,
 						new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG.defaultBlockState()),
 								new StraightTrunkPlacer(4, 2, 0), BlockStateProvider.simple(Blocks.OAK_LEAVES.defaultBlockState()),
 								new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1)).ignoreVines()
@@ -42,7 +43,7 @@ public class OblivionForestBiome {
 				List.of(CountPlacement.of(4), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0),
 						PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:grass_oblivion_forest", VegetationFeatures.PATCH_GRASS,
+				PlacementUtils.register("power_dimensions:grass_oblivion_forest", VegetationFeatures.PATCH_GRASS,
 						List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
 								BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);

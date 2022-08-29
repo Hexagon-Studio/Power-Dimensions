@@ -23,7 +23,7 @@ public class OblivionPlainsBiome {
 				.skyColor(-16764109).foliageColorOverride(-16777216).grassColorOverride(-16777216).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:grass_oblivion_plains", VegetationFeatures.PATCH_GRASS,
+				PlacementUtils.register("power_dimensions:grass_oblivion_plains", VegetationFeatures.PATCH_GRASS,
 						List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
 								BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);

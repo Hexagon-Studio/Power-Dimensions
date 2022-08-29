@@ -90,9 +90,11 @@ public class SunnyKingdomPortalBlock extends NetherPortalBlock {
 		if (!entity.isPassenger() && !entity.isVehicle() && entity.canChangeDimensions() && !entity.level.isClientSide() && true) {
 			if (entity.isOnPortalCooldown()) {
 				entity.setPortalCooldown();
-			} else if (entity.level.dimension() != ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:sunny_kingdom"))) {
+			} else if (entity.level.dimension() != ResourceKey.create(Registry.DIMENSION_REGISTRY,
+					new ResourceLocation("power_dimensions:sunny_kingdom"))) {
 				entity.setPortalCooldown();
-				teleportToDimension(entity, pos, ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:sunny_kingdom")));
+				teleportToDimension(entity, pos,
+						ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power_dimensions:sunny_kingdom")));
 			} else {
 				entity.setPortalCooldown();
 				teleportToDimension(entity, pos, Level.OVERWORLD);

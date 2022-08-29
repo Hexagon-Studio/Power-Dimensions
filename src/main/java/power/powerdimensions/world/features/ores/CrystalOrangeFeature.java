@@ -1,7 +1,7 @@
 
 package power.powerdimensions.world.features.ores;
 
-import power.powerdimensions.init.PowerModBlocks;
+import power.powerdimensions.init.PowerDimensionsModBlocks;
 
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -43,9 +43,9 @@ public class CrystalOrangeFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new CrystalOrangeFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("power:crystal_orange", FEATURE,
-				new OreConfiguration(CrystalOrangeFeatureRuleTest.INSTANCE, PowerModBlocks.CRYSTAL_ORANGE.get().defaultBlockState(), 16));
-		PLACED_FEATURE = PlacementUtils.register("power:crystal_orange", CONFIGURED_FEATURE,
+		CONFIGURED_FEATURE = FeatureUtils.register("power_dimensions:crystal_orange", FEATURE,
+				new OreConfiguration(CrystalOrangeFeatureRuleTest.INSTANCE, PowerDimensionsModBlocks.CRYSTAL_ORANGE.get().defaultBlockState(), 16));
+		PLACED_FEATURE = PlacementUtils.register("power_dimensions:crystal_orange", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(10), InSquarePlacement.spread(),
 						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(256)), BiomeFilter.biome()));
 		return FEATURE;
@@ -57,7 +57,7 @@ public class CrystalOrangeFeature extends OreFeature {
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 	private final Set<ResourceKey<Level>> generate_dimensions = Set
-			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:crystallized")));
+			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power_dimensions:crystallized")));
 
 	public CrystalOrangeFeature() {
 		super(OreConfiguration.CODEC);
@@ -78,7 +78,7 @@ public class CrystalOrangeFeature extends OreFeature {
 
 		@SubscribeEvent
 		public static void init(FMLCommonSetupEvent event) {
-			Registry.register(Registry.RULE_TEST, new ResourceLocation("power:crystal_orange_match"), CUSTOM_MATCH);
+			Registry.register(Registry.RULE_TEST, new ResourceLocation("power_dimensions:crystal_orange_match"), CUSTOM_MATCH);
 		}
 
 		private List<Block> base_blocks = null;
