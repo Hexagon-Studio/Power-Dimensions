@@ -13,6 +13,7 @@
  */
 package power.powerdimensions;
 
+import power.powerdimensions.init.PowerDimensionsModTabs;
 import power.powerdimensions.init.PowerDimensionsModItems;
 import power.powerdimensions.init.PowerDimensionsModFeatures;
 import power.powerdimensions.init.PowerDimensionsModBlocks;
@@ -45,7 +46,7 @@ public class PowerDimensionsMod {
 	private static int messageID = 0;
 
 	public PowerDimensionsMod() {
-
+		PowerDimensionsModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		PowerDimensionsModBlocks.REGISTRY.register(bus);
 		PowerDimensionsModItems.REGISTRY.register(bus);

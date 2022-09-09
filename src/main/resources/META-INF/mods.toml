@@ -30,4 +30,10 @@ About Power Dimensions is an add-on mod for the Keepers of the Stones mod
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.power_dimensions]]
+    modId="allmods"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

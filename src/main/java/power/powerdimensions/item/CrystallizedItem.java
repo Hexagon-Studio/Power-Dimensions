@@ -1,20 +1,20 @@
 
 package power.powerdimensions.item;
 
+import power.powerdimensions.init.PowerDimensionsModTabs;
 import power.powerdimensions.block.CrystallizedPortalBlock;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.core.BlockPos;
 
 public class CrystallizedItem extends Item {
 	public CrystallizedItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(64));
+		super(new Item.Properties().tab(PowerDimensionsModTabs.TAB_DIMENSIONS).durability(64));
 	}
 
 	@Override
