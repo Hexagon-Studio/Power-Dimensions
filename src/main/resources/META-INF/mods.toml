@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[43,)"
 license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
@@ -18,17 +18,11 @@ About Power Dimensions is an add-on mod for the Keepers of the Stones mod
 [[dependencies.power_dimensions]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2]"
+    versionRange="[1.19.2]"
     ordering="NONE"
     side="BOTH"
 
 
-[[dependencies.power_dimensions]]
-    modId="power"
-    mandatory=true
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
 [[dependencies.power_dimensions]]
     modId="allmods"

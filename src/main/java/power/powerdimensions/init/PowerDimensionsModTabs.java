@@ -4,9 +4,6 @@
  */
 package power.powerdimensions.init;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
 
@@ -20,7 +17,7 @@ public class PowerDimensionsModTabs {
 				return new ItemStack(PowerDimensionsModItems.CRYSTALLIZED.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}

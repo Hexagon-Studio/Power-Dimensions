@@ -7,18 +7,6 @@ package power.powerdimensions.init;
 import power.powerdimensions.block.SunnyKingdomPortalBlock;
 import power.powerdimensions.block.OblivionPortalBlock;
 import power.powerdimensions.block.CrystallizedPortalBlock;
-import power.powerdimensions.block.CrystalYellowBlock;
-import power.powerdimensions.block.CrystalVioletBlock;
-import power.powerdimensions.block.CrystalRedBlock;
-import power.powerdimensions.block.CrystalPurpleBlock;
-import power.powerdimensions.block.CrystalPinkBlock;
-import power.powerdimensions.block.CrystalOrangeBlock;
-import power.powerdimensions.block.CrystalLimeBlock;
-import power.powerdimensions.block.CrystalLightBlueBlock;
-import power.powerdimensions.block.CrystalGreenBlock;
-import power.powerdimensions.block.CrystalGrayBlock;
-import power.powerdimensions.block.CrystalBrownBlock;
-import power.powerdimensions.block.CrystalBlueBlock;
 import power.powerdimensions.PowerDimensionsMod;
 
 import net.minecraftforge.registries.RegistryObject;

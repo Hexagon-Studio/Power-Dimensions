@@ -48,13 +48,13 @@ public class PowerDimensionsMod {
 	public PowerDimensionsMod() {
 		PowerDimensionsModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
 		PowerDimensionsModBlocks.REGISTRY.register(bus);
 		PowerDimensionsModItems.REGISTRY.register(bus);
 
 		PowerDimensionsModFeatures.REGISTRY.register(bus);
 
 		PowerDimensionsModBiomes.REGISTRY.register(bus);
-
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,
