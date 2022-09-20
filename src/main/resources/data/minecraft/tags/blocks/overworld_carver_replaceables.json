@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "minecraft:deepslate",
-    "minecraft:grass_block",
-    "minecraft:dirt",
     "minecraft:stone",
-    "minecraft:soul_soil"
+    "minecraft:soul_soil",
+    "minecraft:dirt",
+    "minecraft:grass_block"
   ]
 }

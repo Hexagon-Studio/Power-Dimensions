@@ -15,7 +15,6 @@ package power.powerdimensions;
 
 import power.powerdimensions.init.PowerDimensionsModTabs;
 import power.powerdimensions.init.PowerDimensionsModItems;
-import power.powerdimensions.init.PowerDimensionsModFeatures;
 import power.powerdimensions.init.PowerDimensionsModBlocks;
 import power.powerdimensions.init.PowerDimensionsModBiomes;
 
@@ -51,8 +50,6 @@ public class PowerDimensionsMod {
 
 		PowerDimensionsModBlocks.REGISTRY.register(bus);
 		PowerDimensionsModItems.REGISTRY.register(bus);
-
-		PowerDimensionsModFeatures.REGISTRY.register(bus);
 
 		PowerDimensionsModBiomes.REGISTRY.register(bus);
 	}
