@@ -88,6 +88,7 @@
   "block.power_dimensions.crystal_brown": "Crystal Brown",
   "biome.power.oblivion_desert": "Oblivion Desert",
   "block.power_dimensions.crystal_pink": "Crystal Pink",
+  "biome.power_dimensions.crystallized_forest": "Crystallized Forest",
   "power.cultivation.water_lily.text": "Water Lily",
   "subtitles.stone_deactivation": "Stone been deactivation",
   "subtitles.time_power": "Time Power",
@@ -107,6 +108,7 @@
   "block.power.crystal_violet": "Crystal Violet",
   "power.cultivation.sugar_cane.text": "Sugar Cane",
   "subtitles.powerful_stone": "",
+  "biome.power_dimensions.crystallized_lands": "Crystallized Lands",
   "subtitles.raptor.dead": "",
   "item.power.sunny_kingdom": "Sunny Kingdom Portal Igniter"
 }

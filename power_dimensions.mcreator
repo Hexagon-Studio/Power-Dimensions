@@ -1,6 +1,15 @@
 {
   "mod_elements": [
     {
+      "name": "CrystallizedLands",
+      "type": "biome",
+      "sortid": 796,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallized_lands",
+      "path": "~/Dimensions"
+    },
+    {
       "name": "Crystallized",
       "type": "dimension",
       "sortid": 67,
@@ -67,6 +76,123 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "oblivion_desert",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "CrystalBlue",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_blue",
+      "path": "~/Dimensions/CrystalizedBlocks"
+    },
+    {
+      "name": "CrystalBrown",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_brown",
+      "path": "~/Dimensions/CrystalizedBlocks"
+    },
+    {
+      "name": "CrystalGray",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_gray",
+      "path": "~/Dimensions/CrystalizedBlocks"
+    },
+    {
+      "name": "CrystalGreen",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_green",
+      "path": "~/Dimensions/CrystalizedBlocks"
+    },
+    {
+      "name": "CrystalLightBlue",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_light_blue",
+      "path": "~/Dimensions/CrystalizedBlocks"
+    },
+    {
+      "name": "CrystalLime",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_lime",
+      "path": "~/Dimensions/CrystalizedBlocks"
+    },
+    {
+      "name": "CrystalOrange",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_orange",
+      "path": "~/Dimensions/CrystalizedBlocks"
+    },
+    {
+      "name": "CrystalPink",
+      "type": "block",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_pink",
+      "path": "~/Dimensions/CrystalizedBlocks"
+    },
+    {
+      "name": "CrystalRed",
+      "type": "block",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_red",
+      "path": "~/Dimensions/CrystalizedBlocks"
+    },
+    {
+      "name": "CrystalPurple",
+      "type": "block",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_purple",
+      "path": "~/Dimensions/CrystalizedBlocks"
+    },
+    {
+      "name": "CrystalViolet",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_violet",
+      "path": "~/Dimensions/CrystalizedBlocks"
+    },
+    {
+      "name": "CrystalYellow",
+      "type": "block",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_yellow",
+      "path": "~/Dimensions/CrystalizedBlocks"
+    },
+    {
+      "name": "CrystallizedForest",
+      "type": "biome",
+      "sortid": 884,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallized_forest",
       "path": "~/Dimensions"
     },
     {
@@ -971,6 +1097,7 @@
       "block.power_dimensions.crystal_brown": "Crystal Brown",
       "biome.power.oblivion_desert": "Oblivion Desert",
       "block.power_dimensions.crystal_pink": "Crystal Pink",
+      "biome.power_dimensions.crystallized_forest": "Crystallized Forest",
       "power.cultivation.water_lily.text": "Water Lily",
       "subtitles.stone_deactivation": "Stone been deactivation",
       "subtitles.time_power": "Time Power",
@@ -990,6 +1117,7 @@
       "block.power.crystal_violet": "Crystal Violet",
       "power.cultivation.sugar_cane.text": "Sugar Cane",
       "subtitles.powerful_stone": "",
+      "biome.power_dimensions.crystallized_lands": "Crystallized Lands",
       "subtitles.raptor.dead": "",
       "item.power.sunny_kingdom": "Sunny Kingdom Portal Igniter"
     }
