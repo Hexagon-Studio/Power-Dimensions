@@ -15,6 +15,7 @@ import power.powerdimensions.PowerDimensionsMod;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.server.ServerAboutToStartEvent;
 
@@ -43,6 +44,7 @@ import java.util.ArrayList;
 
 import com.mojang.datafixers.util.Pair;
 
+@Mod.EventBusSubscriber
 public class PowerDimensionsModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, PowerDimensionsMod.MODID);
 	public static final RegistryObject<Biome> CRYSTALLIZED_LANDS = REGISTRY.register("crystallized_lands",
