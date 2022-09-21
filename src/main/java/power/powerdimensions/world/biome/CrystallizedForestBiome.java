@@ -4,7 +4,6 @@ package power.powerdimensions.world.biome;
 import power.powerdimensions.world.features.treedecorators.CrystallizedForestTrunkDecorator;
 import power.powerdimensions.world.features.treedecorators.CrystallizedForestLeaveDecorator;
 import power.powerdimensions.world.features.treedecorators.CrystallizedForestFruitDecorator;
-import power.powerdimensions.init.PowerDimensionsModBlocks;
 
 import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
 import net.minecraft.world.level.levelgen.placement.RarityFilter;
@@ -42,10 +41,8 @@ public class CrystallizedForestBiome {
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("power_dimensions:tree_crystallized_forest",
 						FeatureUtils.register("power_dimensions:tree_crystallized_forest", Feature.TREE,
-								new TreeConfiguration.TreeConfigurationBuilder(
-										BlockStateProvider.simple(PowerDimensionsModBlocks.CRYSTAL_BROWN.get().defaultBlockState()),
-										new StraightTrunkPlacer(5, 2, 0),
-										BlockStateProvider.simple(PowerDimensionsModBlocks.CRYSTAL_GREEN.get().defaultBlockState()),
+								new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG.defaultBlockState()),
+										new StraightTrunkPlacer(4, 2, 0), BlockStateProvider.simple(Blocks.OAK_LEAVES.defaultBlockState()),
 										new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
 										.decorators(ImmutableList.of(CrystallizedForestLeaveDecorator.INSTANCE,
 												CrystallizedForestTrunkDecorator.INSTANCE, CrystallizedForestFruitDecorator.INSTANCE))
