@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 34,
   "_type": "biome",
   "definition": {
     "name": "Oblivion Forest",
@@ -50,7 +50,6 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "FOREST",
     "rainingPossibility": 0.7,
     "temperature": 1.2,
     "baseHeight": 0.2,
@@ -59,7 +58,6 @@
     "spawnBiomeNether": false,
     "spawnInCaves": false,
     "biomeWeight": 30,
-    "biomeDictionaryTypes": [],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
@@ -71,19 +69,19 @@
     "cactiPerChunk": 0,
     "treesPerChunk": 4,
     "vanillaTreeType": "Default",
-    "treeType": 0,
+    "treeType": 1,
     "minHeight": 7,
     "treeStem": {
-      "value": ""
+      "value": "CUSTOM:CrystalBrown"
     },
     "treeBranch": {
-      "value": ""
+      "value": "CUSTOM:CrystalGreen"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,

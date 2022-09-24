@@ -55,6 +55,7 @@ public class PowerDimensionsMod {
 		PowerDimensionsModFeatures.REGISTRY.register(bus);
 
 		PowerDimensionsModBiomes.REGISTRY.register(bus);
+
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,
