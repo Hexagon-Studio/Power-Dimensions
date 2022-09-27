@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "power_dimensions:crystal_pink",
+  "step": "underground_ores"
+}

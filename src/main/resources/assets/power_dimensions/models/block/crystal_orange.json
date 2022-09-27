@@ -8,5 +8,6 @@
     "south": "power_dimensions:blocks/crystal_block_orange",
     "west": "power_dimensions:blocks/crystal_block_orange",
     "particle": "power_dimensions:blocks/crystal_block_orange"
-  }
+  },
+  "render_type": "solid"
 }

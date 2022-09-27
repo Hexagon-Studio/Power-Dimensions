@@ -4,6 +4,18 @@
  */
 package power.powerdimensions.init;
 
+import power.powerdimensions.world.features.ores.CrystalYellowFeature;
+import power.powerdimensions.world.features.ores.CrystalVioletFeature;
+import power.powerdimensions.world.features.ores.CrystalRedFeature;
+import power.powerdimensions.world.features.ores.CrystalPurpleFeature;
+import power.powerdimensions.world.features.ores.CrystalPinkFeature;
+import power.powerdimensions.world.features.ores.CrystalOrangeFeature;
+import power.powerdimensions.world.features.ores.CrystalLimeFeature;
+import power.powerdimensions.world.features.ores.CrystalLightBlueFeature;
+import power.powerdimensions.world.features.ores.CrystalGreenFeature;
+import power.powerdimensions.world.features.ores.CrystalGrayFeature;
+import power.powerdimensions.world.features.ores.CrystalBrownFeature;
+import power.powerdimensions.world.features.ores.CrystalBlueFeature;
 import power.powerdimensions.PowerDimensionsMod;
 
 import net.minecraftforge.registries.RegistryObject;

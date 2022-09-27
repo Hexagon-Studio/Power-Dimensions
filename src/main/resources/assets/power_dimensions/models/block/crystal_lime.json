@@ -8,5 +8,6 @@
     "south": "power_dimensions:blocks/crystal_block_lime",
     "west": "power_dimensions:blocks/crystal_block_lime",
     "particle": "power_dimensions:blocks/crystal_block_lime"
-  }
+  },
+  "render_type": "solid"
 }
