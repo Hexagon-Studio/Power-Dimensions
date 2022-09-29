@@ -2,7 +2,7 @@
   "_fv": 34,
   "_type": "biome",
   "definition": {
-    "name": "Sun Plains",
+    "name": "Sunny Forest",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
@@ -63,7 +63,7 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 0,
+    "treesPerChunk": 5,
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,

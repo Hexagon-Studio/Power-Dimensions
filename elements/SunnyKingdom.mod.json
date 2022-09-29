@@ -5,6 +5,12 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:SunPlains"
+      },
+      {
+        "value": "CUSTOM:SunForest"
+      },
+      {
+        "value": "CUSTOM:SunOcean"
       }
     ],
     "worldGenType": "End like gen",

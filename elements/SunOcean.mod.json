@@ -2,12 +2,12 @@
   "_fv": 34,
   "_type": "biome",
   "definition": {
-    "name": "Sun Plains",
+    "name": "Sun Ocean",
     "groundBlock": {
-      "value": "Blocks.GRASS"
+      "value": "Blocks.FLOWING_WATER"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "Blocks.FLOWING_WATER"
     },
     "underwaterBlock": {
       "value": "Blocks.SAND#0"
@@ -25,7 +25,7 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -6684724,
+      "value": -3355648,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -53,9 +53,9 @@
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 30,
-    "grassPerChunk": 8,
-    "seagrassPerChunk": 0,
+    "biomeWeight": 25,
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 4,
     "flowersPerChunk": 6,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
@@ -100,8 +100,8 @@
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
-      "Caves",
-      "Ores"
+      "Ores",
+      "OceanCaves"
     ],
     "spawnEntries": [
       {

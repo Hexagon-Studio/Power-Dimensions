@@ -5,6 +5,7 @@
     "minecraft:grass_block",
     "minecraft:dirt",
     "minecraft:stone",
-    "minecraft:soul_soil"
+    "minecraft:soul_soil",
+    "minecraft:water"
   ]
 }
