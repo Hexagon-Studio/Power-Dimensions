@@ -2,7 +2,9 @@
   "homepage": "https://github.com/Hexagon-Studio/Power-Dimensions",
   "promos": {
     "1.18.2-latest": "1.0.1",
-    "1.18.2-recommended": "1.0.1"
+    "1.18.2-recommended": "1.0.1",
+    "1.18.2-latest": "1.0.2",
+    "1.18.2-recommended": "1.0.2"
   },
   "1.18.2": {
 "1.0.0": "
@@ -11,6 +13,11 @@ You can download the mod by following the link: https://github.com/Hexagon-Studi
 "1.0.1": "
 - The use of Keepers of the Stones is now mandatory for this mod to work
 - [Bugfix] Batteries can again be used to craft flint portals
+You can download the mod by following the link: https://github.com/Hexagon-Studio/Power-Dimensions"
+  },
+  "1.19.2": {
+"1.0.2": "
+- Transferring the mod to version 1.19.2
 You can download the mod by following the link: https://github.com/Hexagon-Studio/Power-Dimensions"
   }
 }
